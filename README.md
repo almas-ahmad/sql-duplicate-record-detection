@@ -22,6 +22,6 @@ in a GPS table.
 SELECT
     id,
     COUNT(*) AS duplicate_count
-FROM gps_team.gps_team_blackbuck_fleetapp_gps_wallet_transaction_mapping
+FROM gps table
 GROUP BY id
 HAVING COUNT(*) > 1;
